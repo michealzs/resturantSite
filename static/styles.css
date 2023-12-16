@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+ul {
+  background: #D3D3D3;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+table {
+    border-spacing: 2px; /* adjust for desired spacing */
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+img.jumbotron {
+    width: 100%;
+    height: auto; /* This is to maintain the aspect ratio of the image */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+button a:hover {
+    color: #000000;
+}
+
+button a {
+    text-decoration: none;
+}
+

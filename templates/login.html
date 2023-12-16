@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <button><a href="{{ url_for('home') }}">Home</a></button>
+    </header>
+	<div class="container">
+        {% include 'flash.html' %}
+    </div>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+    <br>
+    <p> Dont have an account ? </p>
+    <button><a href="{{ url_for('register') }}">Sign up</a></button>
+</body>
+</html>

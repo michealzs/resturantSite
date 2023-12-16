@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+ </head>
+<body>
+    {% include 'header.html'  %}
+    <h2>About</h2>
+    <img src="{{ url_for('static', filename='images/about.jpg')}}" alt="contact" class="jumbotron">
+    <!-- update with contents -->
+    <p>This is our about us page.</p>
+    <h5>Thank you.</h5>
+    <br>
+    <ul>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+        <li><a href="https://www.twitter.com">Twitter</a></li>
+        <li><a href="https://www.snapchat.com">Snapchat</a></li>
+    </ul>
+</body>
+</html>
+
+
+

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+ </head>
+<body>
+    {% include 'header.html'  %}
+    <h3>Contact</h3>
+    <img src="{{ url_for('static', filename='images/contact.jpg')}}" alt="contact us" class="jumbotron">
+    <!-- Add a form -->
+    <p>Please reach out to us at customer@brunchcafe.ie.</p>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+ </head>
+<body>
+    <!--- Navbar -->
+    <h1>Brunch Cafe</h1>
+    <div>
+        	<button><a href="{{ url_for('register') }}">Sign up</a></button>
+            <button><a href="{{ url_for('login') }}">Login</a></button>
+    </div>
+    <h2>The Current Date and Time is {{ date_time }}</h2>
+    <p> Welome to out home page.</p>
+    <img src="{{ url_for('static', filename='images/dine.jpg')}}" alt="contact" class="jumbotron">
+    <p> Kindly bootsrap you order </p>
+    <br>
+    <!-- Add carousel -->
+    <h3> What we offer </h3>
+    <ol>
+        <li>Breakfast</li>
+        <li>Lunch</li>
+        <li>Dinner</li>
+        <li>Drinks</li>
+    </ol>
+
+    <br>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Spaghetti Bolognese</td>
+            <td>Classic Italian dish with a rich meat sauce</td>
+            <td><img src="{{ url_for('static', filename='images/spaghetti.jpg')}}" alt="Spaghetti Bolognese" width="100"></td>
+            <td>$12.00</td>
+        </tr>
+        <tr>
+            <td>Vegetable Salad</td>
+            <td>Mixed vegetables cooked quickly with a tasty sauce</td>
+            <td><img src="{{ url_for('static', filename='images/vegetable.jpg')}}" alt="Vegetable" width="100"></td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Chicken Salad</td>
+            <td>Fresh salad with grilled chicken, croutons, and Caesar dressing</td>
+            <td><img src="{{ url_for('static', filename='images/salad.jpg')}}" alt="Chicken Salad" width="100"></td>
+            <td>$11.00</td>
+        </tr>
+        <tr>
+            <td>Pizza</td>
+            <td>Classic pizza with tomato sauce, fresh mozzarella, and basil</td>
+            <td><img src="{{ url_for('static', filename='images/pizza.jpg')}}" alt="Pizza" width="100"></td>
+            <td>$13.00</td>
+        </tr>
+    </table>
+
+    <footer>
+        <ul>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="{{ url_for('about') }}">About us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
