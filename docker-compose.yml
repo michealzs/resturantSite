@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  web:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: >-
+      sh -c "pip install --no-cache-dir flask passlib && python main.py"
+    ports:
+      - "8080:81"
