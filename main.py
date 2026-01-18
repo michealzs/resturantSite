@@ -146,7 +146,7 @@ def is_complex(password):
     return False
 
 
-app.run(host='0.0.0.0', port=81)
+app.run(host='0.0.0.0', port=8081)
 
 # if __name__ == '__main__':
 #    app.run()
